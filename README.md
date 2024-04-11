@@ -33,8 +33,8 @@ auto id6 = scheduler.add([]{float a, float v}{return v/(2*a);},a, scheduler.getF
 
 scheduler.executeAll();
 
-std::cout << "x1 = " << scheduler.getResult<int>(id5) << std::endl;
-std::cout << "x2 = " << scheduler.getResult<int>(id6) << std::endl;
+std::cout << "x1 = " << scheduler.getResult<float>(id5) << std::endl;
+std::cout << "x2 = " << scheduler.getResult<float>(id6) << std::endl;
 ```
 
 Где getFutureResult это результат выполнения задачи в будущем,
